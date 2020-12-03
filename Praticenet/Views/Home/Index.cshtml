@@ -1,0 +1,12 @@
+﻿@model IQueryable<Product>
+
+@foreach (var p in Model)
+{
+    <div class="col-md-12" style="margin-top: 30px">
+        <div class="col-md-3" style="float: left">
+            <h3>@p.Name</h3>
+            <p>@p.Category</p>
+            <p>@p.Luong</p>
+        </div>
+    </div>
+}
